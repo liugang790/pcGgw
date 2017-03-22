@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<meta charset="UTF-8">
+<title>发布商品-格格屋管理中心</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta http-equiv=Page-Enter Content=blendTrans(Duration=0.5)>
+<meta http-equiv=Page-Exit Content=blendTrans(Duration=0.5)>
+<meta name="description" content="格格屋">
+<link rel="stylesheet" type="text/css" href="style/common.css">
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<link rel="stylesheet" type="text/css" href="style/style.css" >
+<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="adminstyle/style.css">
+</head>
+<body>
+<div class="site_nav">
+    <div class="content clearfix">
+        <span>您好，xxxxx，欢迎来到格格屋！<a href="#" class="color-pink">[退出]</a></span>
+        <span class="kf">客服旺旺: <a href="http://www.taobao.com/webww/ww.php?ver=3&touid=garyxiao&siteid=cntaobao&status=1&charset=utf-8%EF%BC%89" target="_blank">garyxiao</a></span>
+    </div>
+</div>
+
+<!-- admin-header start -->
+<div class="admin-header">
+    <div class="content clear">
+        <div class="admin-logo left">
+            <a href="index.html" class="logo" target="_blank"><img src="adminimages/logo.gif"></a>
+            <span class="top-title color-grey size-18">格格屋管理中心</span>
+            <!--<a href="#" class="btn-top">切换到分销商</a>-->
+        </div>
+        <div class="admin-nav right">
+            <a href="admin_index.html">管理首页</a>
+           <a href="admin_orders.html">代发订单<span class="bg-tip">有新订单</span></a>
+            <a href="admin_shopinfo.html" class="cur">店铺信息</a>
+            
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- admin-header end -->
+
+
+<!-- maincontent start -->
+<div class="content">
+    <!-- admin-content-left start -->
+    <div class="admin-content-left left">
+        <div class="left-nav">
+            <h4>商品管理</h4>
+           <ul>
+           <!--
+            <li><a href="admin_bandshop.html">绑定店铺</a></li>
+            <li><a href="admin_setprice.html">设定拿货价</a></li>
+            -->
+            <li><a href="admin_goods.html">我的商品</a></li>
+            <li><a href="admin_publish.html" class="cur">发布商品</a></li>
+           </ul>
+           <h4>代发订单</h4>
+           <ul>
+            <li><a href="admin_orders.html">我的代发订单</a></li>
+            <li><a href="admin_orders.html">代发订单统计</a></li>
+           </ul>
+           <h4>店铺管理</h4>
+           <ul>
+            <li><a href="admin_shopinfo.html">店铺信息</a></li>
+           </ul>
+        </div>
+    </div>
+    <!-- admin-content-left end -->
+    
+    <!-- admin-content-right start -->
+    <div class="admin-content-right right">
+        
+       
+        
+        <!-- admin-container start -->
+        <div class="admin-container">
+            <div class="cont-title">
+            <a href="#" class="cur">我的订单--订单详情</a>
+            
+           </div>
+           <div class="cont-content">
+              <div class="cont-two">
+                <div class="cont-twoa">
+                  <span>待发货</span>
+                  <span class="cont-sanjiao fa none"></span>
+                </div>
+                <div class="cont-twob f1 ">
+                  <span>代发下单</span>
+                  <span class="cont-sanjiao fb"></span>
+                </div>
+              </div>
+              <div class="cont-two-time">
+                <div>2016-6-23:23</div>
+                <div>2016-6-23:23</div>
+              </div>
+              <div class="cont-select-statues">
+                 <div class="ddzt">
+                   <span>订单状态：</span>
+                   <span>已下单</span>
+                 </div>
+                 <div class="ddzt-mess">
+                    <div class="ddzt-mess-left">
+                       <div><span>订单编号：</span><span>2342342342984242</span></div>
+                       <div><span>成交时间：</span><span>2016-6-6 12:12</span></div>
+                       <div><span>代发时间：</span><span>2016-6-6 12:12</span></div>
+                       <div><span>下单人：</span><span>阿达阿斯顿</span></div>
+                    </div>
+                    <div class="ddzt-btn">
+                      <button type="button" class="btn btn-primary" data-toggle="popover"   data-html="true" data-placement="bottom" data-content="
+                              <div class='cont-select-send' >
+                               <div class='send-wl'>
+                                        <span class='ff'>申通</span><span>圆通</span><span>中通</span><span>韵达</span>
+                                        <span>邮政</span><span>顺丰</span>
+                                        <label>其他</label>
+                                        <input type='text' class='form-control company' placeholder='输入物流公司'>
+                                </div>
+                                <div class='send-num'>
+                                   <label>物流单号</label>
+                                   <input type='text' class='form-control number'>
+                                </div>
+                                 <div class='count-sure' >
+                                     <button type='button' class='btn btn-default'>取消</button>
+                                     <button type='button' class='btn btn-success'>确定发货</button>
+                                    </div>
+                              </div>
+                             ">发货</button>
+                    </div>
+                 </div>
+              </div>
+              <div class="cont-receive">
+                <div class="shxx">收货信息</div>
+                <div class="shxx-mess">
+                  <p><span>收货人信息：</span><span>某某某，18080808080，成都市陈飞阿达阿斯顿阿阿斯顿按时撒的啊</span></p>
+                  <p><span>要求物流公司：</span><span>任意</span></p>
+                  <p><span>物流单号：</span><span>213123134233424</span></p>
+                </div>
+              </div>
+              <div class="cont-receive">
+                <div class="shxx">商品信息</div>
+                <div class="shxx-mess ">
+                  <div class="f3 first">
+                   <table>
+                     <tbody>
+                       <tr>
+                         <td>
+                           <div class="mess-img">
+                             <img src="images/dd.jpg">
+                           </div>
+                         </td>
+                         <td><div class="font-color f2 f11"><a href="#">欧洲站2016夏季新款女装显示</a></div></td>
+                         <td>颜色分类：花色</td>
+                         <td>尺码：S</td>
+                         <td><div class="mess-price f2">80.00</div></td>
+                         <td><div class="mess-count f2">1</div></td>
+                       </tr>
+                     </tbody>
+                   </table>
+                   </div>
+                </div>
+                <div class="shxx-mess">
+                  <div class="f3">
+                   <table>
+                     <tbody>
+                       <tr>
+                         <td>
+                           <div class="mess-img">
+                             <img src="images/dd.jpg">
+                           </div>
+                         </td>
+                         <td><div class="font-color f2"><a href="#">欧洲站2016夏季新款女装显示</a></div></td>
+                         <td>颜色分类：花色</td>
+                         <td>尺码：S</td>
+                         <td><div class="mess-price f2">80.00</div></td>
+                         <td><div class="mess-count f2">1</div></td>
+                       </tr>
+                     </tbody>
+                   </table>
+                   </div>
+                </div>
+                <div class="shxx-mess">
+                  <div class="f3">
+                   <table>
+                     <tbody>
+                       <tr>
+                         <td>
+                           <div class="mess-img">
+                             <img src="images/dd.jpg">
+                           </div>
+                         </td>
+                         <td><div class="font-color f2"><a href="#">欧洲站2016夏季新款女装显示</a></div></td>
+                         <td>颜色分类：花色</td>
+                         <td>尺码：S</td>
+                         <td><div class="mess-price f2">80.00</div></td>
+                         <td><div class="mess-count f2">1</div></td>
+                       </tr>
+                     </tbody>
+                   </table>
+                   </div>
+                </div>
+              </div>
+            </div>
+        </div>
+         <!-- admin-container end -->
+    
+    </div>
+    <!-- admin-content-right end -->
+    <div class="clearfix"></div>
+</div>
+<!-- maincontent end -->
+
+<div class="footer_promise admin-login-class">
+  <div class="content">
+     <div class="promise clearfix">
+         <a href="">
+           <span class="icon_promise promise0"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise1"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise2"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise3"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise4"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise5"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise6 promisea"></span>
+         </a>
+     </div>
+  </div>
+</div>
+<div class="footer">
+  <p>服务热线：028-85977745       备案号：蜀ICP备12017352号-2</p>
+  <p>Copyright© 2010 - 2016 格格屋[gege5.cn] All Rights Reserved gege5.cn</p>
+</div>
+<div class="xf_tk">
+  <a href="http://wpa.qq.com/msgrd?v=3&uin=623862141&site=qq&menu=yes%EF%BC%89" title="QQ联系" class="tk_qq" target="_blank"></a>
+  <a href="http://www.taobao.com/webww/ww.php?ver=3&touid=garyxiao&siteid=cntaobao&status=1&charset=utf-8%EF%BC%89" title="旺旺联系" class="tk_ww" target="_blank"></a>
+<!--   <a href="" title="微信联系" class="tk_wx" target="_blank"></a> -->
+  <a href="" title="返回顶部" class="tk_top"></a>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="js/new.js"></script>
+<script type="text/javascript" src="js/date.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+  (function(){
+  $(".bxslider").bxSlider({
+    auto:true,
+    prevSelector:$(".top_slide_wrap .op_prev")[0],nextSelector:$(".top_slide_wrap .op_next")[0]
+  });
+})();
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+
+</script>
+</body>
+</html>

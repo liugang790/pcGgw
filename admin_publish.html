@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<meta charset="UTF-8">
+<title>发布商品-格格屋管理中心</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta http-equiv=Page-Enter Content=blendTrans(Duration=0.5)>
+<meta http-equiv=Page-Exit Content=blendTrans(Duration=0.5)>
+<meta name="description" content="格格屋">
+<link rel="stylesheet" type="text/css" href="style/common.css">
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="adminstyle/style.css">
+</head>
+<body>
+<div class="site_nav">
+    <div class="content clearfix">
+        <span>您好，xxxxx，欢迎来到格格屋！<a href="#" class="color-pink">[退出]</a></span>
+        <span class="kf">客服旺旺: <a href="http://www.taobao.com/webww/ww.php?ver=3&touid=garyxiao&siteid=cntaobao&status=1&charset=utf-8%EF%BC%89" target="_blank">garyxiao</a></span>
+    </div>
+</div>
+
+<!-- admin-header start -->
+<div class="admin-header">
+	<div class="content clear">
+    	<div class="admin-logo left">
+            <a href="index.html" class="logo" target="_blank"><img src="adminimages/logo.gif"></a>
+            <span class="top-title color-grey size-18">格格屋管理中心</span>
+            <!--<a href="#" class="btn-top">切换到分销商</a>-->
+        </div>
+        <div class="admin-nav right">
+        	<a href="admin_index.html">管理首页</a>
+           <a href="admin_orders.html">代发订单<span class="bg-tip">有新订单</span></a>
+          	<a href="admin_shopinfo.html" class="cur">店铺信息</a>
+            
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- admin-header end -->
+
+
+<!-- maincontent start -->
+<div class="content">
+	<!-- admin-content-left start -->
+	<div class="admin-content-left left">
+    	<div class="left-nav">
+        	<h4>商品管理</h4>
+           <ul>
+           <!--
+           	<li><a href="admin_bandshop.html">绑定店铺</a></li>
+            <li><a href="admin_setprice.html">设定拿货价</a></li>
+            -->
+            <li><a href="admin_goods.html">我的商品</a></li>
+            <li><a href="admin_publish.html" class="cur">发布商品</a></li>
+           </ul>
+           <h4>代发订单</h4>
+           <ul>
+            <li><a href="admin_orders.html">我的代发订单</a></li>
+            <li><a href="admin_orders.html">代发订单统计</a></li>
+           </ul>
+           <h4>店铺管理</h4>
+           <ul>
+            <li><a href="admin_shopinfo.html">店铺信息</a></li>
+           </ul>
+        </div>
+    </div>
+   	<!-- admin-content-left end -->
+    
+    <!-- admin-content-right start -->
+    <div class="admin-content-right right">
+    	
+       
+        
+        <!-- admin-container start -->
+    	<div class="admin-container">
+        	<div class="cont-title">
+            <a href="#" class="cur">发布商品</a>
+            
+           </div>
+           <div class="cont-content">
+           
+			<div class="bootstrap_input">
+                  <form class="form-horizontal">
+                  	<div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">常用分类</label>
+                        <div class="col-sm-8">
+                           <select class="form-control">
+                           		<option>选择常用分类(用户经常选择的)</option>
+                                <option>女装>连衣裙>长裙</option>
+                           </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">选择分类</label>
+                        <div class="col-sm-2">
+                          <select class="form-control">
+                           		<option>一级分类</option>
+                           </select>
+                        </div>
+                        <div class="col-sm-2">
+                          <select class="form-control">
+                           		<option>二级分类</option>
+                           </select>
+                        </div>
+                        <div class="col-sm-2">
+                          <select class="form-control">
+                           		<option>三级分类</option>
+                           </select>
+                        </div>
+                      </div>
+                      
+                      <div class="form-cut"></div>
+                      
+                      
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">商品标题</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="" placeholder="">
+                          <span class="help-block">还能输入<span class="color-green">30字</span></span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">价格</label>
+                        <div class="col-sm-3">
+                        
+                          <input type="text" class="form-control" />
+                          <span class="help-block">拿货价</span>
+                        </div>
+                        <div class="col-sm-3">
+                          <input type="text" class="form-control" />
+                          <span class="help-block">原价</span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">库存</label>
+                        <div class="col-sm-3">
+                          <input type="text" class="form-control" />
+                          <span class="help-block alert-danger">错误信息提示</span>
+                        </div>
+                        
+                      </div>
+                      
+                      <div class="form-cut"></div>
+                      
+                      
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">商品规格</label>
+                        <div class="col-sm-8">
+                          <div class="tab_in">
+                         	<div class="sku-group">
+                            	<!-- sku-box start -->
+                            	<div class="sku-box">
+                            	<div class="sku-title"><a href="javascript:;" class="close">close</a><input type="text" class="form-control" style="width:140px;" placeholder="规格名称" /></div>
+                                <div class="sku-sub-group">
+                                <span class="sku-sub-cnt"><a href="javascript:;" class="innerclose">close</a><input type="text" class="form-control" style="width:100px; display:inline;" placeholder="规格值" /></span>
+                                <span class="sku-sub-cnt"><a href="javascript:;" class="innerclose">close</a><input type="text" class="form-control" style="width:100px; display:inline;" placeholder="规格值" /></span>
+                                <a href="#">+添加</a>
+                                </div>
+                                </div>
+                                <!-- sku-box end -->
+                                <div class="sku-title"><button type="button" class="btn add-sku-btn" value="添加规格">＋添加规格</button></div>
+                            </div>
+                            
+                         </div>
+                          <span class="help-block">最多添加两组规格</span>
+                        </div>
+                        
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">商品属性</label>
+                        <div class="col-sm-8">
+                          <div class="tab_in">
+                         	<div class="sku-group">
+                            	<div class="sku-title"><a href="javascript:;" class="close">close</a><input type="text" class="form-control" style=" display:inline;width:140px;" placeholder="属性名" />&nbsp;&nbsp;&nbsp;<input type="text" class="form-control" style=" display:inline;width:140px;" placeholder="属性值" /></div>
+                                <div class="sku-title"><button type="button" class="btn add-sku-btn" value="添加属性">＋添加属性</button></div>
+                            </div>
+                          <span class="help-block"></span>
+                        </div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-cut"></div>
+                      
+                      
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">商品主图</label>
+                        <div class="col-sm-8">
+                          <div class="main-pic-box ">
+                          		<div class="pic-box col-sm-6"><a href="javascript:;" class="close-pic">close</a><img src="adminimages/pic_temp.jpg" /></div>
+                                <div class="pic-box col-sm-6"><a href="javascript:;" class="close-pic">close</a><img src="adminimages/pic_temp.jpg" /></div>
+                                <div class="pic-add col-sm-6"><input type="file" title="" placeholder=""></div>
+                                <div class="clearfix"></div>
+                          </div>
+                          
+                          <span class="help-block">至少添加1张主图,最多5张</span>
+                        </div>
+                        
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">商品详情</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" style="width:98%; height:400px;" >这里用富文本编辑框</textarea>
+                          <span class="help-block"></span>
+                        </div>
+                        
+                      </div>
+                      
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-default input-type-btn">确定发布</button>
+                        </div>
+                      </div>
+                    </form>
+ 
+               </div>   
+            
+           </div>
+          
+        </div>
+         <!-- admin-container end -->
+    
+    </div>
+    <!-- admin-content-right end -->
+    <div class="clearfix"></div>
+</div>
+<!-- maincontent end -->
+
+<div class="footer_promise admin-login-class">
+  <div class="content">
+     <div class="promise clearfix">
+         <a href="">
+           <span class="icon_promise promise0"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise1"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise2"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise3"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise4"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise5"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise6 promisea"></span>
+         </a>
+     </div>
+  </div>
+</div>
+<div class="footer">
+  <p>服务热线：028-85977745       备案号：蜀ICP备12017352号-2</p>
+  <p>Copyright© 2010 - 2016 格格屋[gege5.cn] All Rights Reserved gege5.cn</p>
+</div>
+<div class="xf_tk">
+  <a href="http://wpa.qq.com/msgrd?v=3&uin=623862141&site=qq&menu=yes%EF%BC%89" title="QQ联系" class="tk_qq" target="_blank"></a>
+  <a href="http://www.taobao.com/webww/ww.php?ver=3&touid=garyxiao&siteid=cntaobao&status=1&charset=utf-8%EF%BC%89" title="旺旺联系" class="tk_ww" target="_blank"></a>
+<!--   <a href="" title="微信联系" class="tk_wx" target="_blank"></a> -->
+  <a href="" title="返回顶部" class="tk_top"></a>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+  (function(){
+  $(".bxslider").bxSlider({
+    auto:true,
+    prevSelector:$(".top_slide_wrap .op_prev")[0],nextSelector:$(".top_slide_wrap .op_next")[0]
+  });
+})();
+</script>
+</body>
+</html>

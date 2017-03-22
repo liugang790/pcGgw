@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<meta charset="UTF-8">
+<title>发布商品-格格屋管理中心</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta http-equiv=Page-Enter Content=blendTrans(Duration=0.5)>
+<meta http-equiv=Page-Exit Content=blendTrans(Duration=0.5)>
+<meta name="description" content="格格屋">
+<link rel="stylesheet" type="text/css" href="style/common.css">
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<link rel="stylesheet" type="text/css" href="style/style.css" >
+<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="adminstyle/style.css">
+</head>
+<body>
+<div class="site_nav">
+    <div class="content clearfix">
+        <span>您好，xxxxx，欢迎来到格格屋！<a href="#" class="color-pink">[退出]</a></span>
+        <span class="kf">客服旺旺: <a href="http://www.taobao.com/webww/ww.php?ver=3&amp;touid=garyxiao&amp;siteid=cntaobao&amp;status=1&amp;charset=utf-8%EF%BC%89" target="_blank">garyxiao</a></span>
+    </div>
+</div>
+
+<!-- admin-header start -->
+<div class="admin-header">
+    <div class="content clear">
+        <div class="admin-logo left">
+            <a href="index.html" class="logo" target="_blank"><img src="adminimages/logo.gif"></a>
+            <span class="top-title color-grey size-18">格格屋管理中心</span>
+            <!--<a href="#" class="btn-top">切换到分销商</a>-->
+        </div>
+        <div class="admin-nav right">
+            <a href="admin_index.html">管理首页</a>
+           <a href="admin_orders.html">代发订单<span class="bg-tip">有新订单</span></a>
+            <a href="admin_shopinfo.html" class="cur">店铺信息</a>
+            
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- admin-header end -->
+
+
+<!-- maincontent start -->
+<div class="content">
+    <!-- admin-content-left start -->
+    <div class="admin-content-left left">
+        <div class="left-nav">
+            <h4>商品管理</h4>
+           <ul>
+           <!--
+            <li><a href="admin_bandshop.html">绑定店铺</a></li>
+            <li><a href="admin_setprice.html">设定拿货价</a></li>
+            -->
+            <li><a href="admin_goods.html">我的商品</a></li>
+            <li><a href="admin_publish.html" class="cur">发布商品</a></li>
+           </ul>
+           <h4>代发订单</h4>
+           <ul>
+            <li><a href="admin_orders.html">我的代发订单</a></li>
+            <li><a href="admin_orders.html">代发订单统计</a></li>
+           </ul>
+           <h4>店铺管理</h4>
+           <ul>
+            <li><a href="admin_shopinfo.html">店铺信息</a></li>
+           </ul>
+        </div>
+    </div>
+    <!-- admin-content-left end -->
+    
+    <!-- admin-content-right start -->
+    <div class="admin-content-right right">
+        
+       
+        
+        <!-- admin-container start -->
+        <div class="admin-container">
+            <div class="cont-title">
+            <a href="#" class="cur">订单统计</a>     
+           </div>
+           <div class="cont-content">
+               <div class="cont-totay-number">
+                 <span>当日总订单数</span>
+                 <span>订单总金额</span>
+                 <span>已发货金额</span>
+               </div>
+               <div class="cont-totay">
+                 <span>今日</span>
+                 <span class="f4">20</span>
+                 <span class="f4">865</span>
+                 <span class="f4">542</span>
+               </div>
+               <div class="cont-total-ula">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><span>下单人名称</span></td>
+                        <td><span>10</span></td>
+                        <td><span>2</span></td>
+                        <td><span>200</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>下单人名称</span></td>
+                        <td><span>10</span></td>
+                        <td><span>2</span></td>
+                        <td><span>200</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>下单人名称</span></td>
+                        <td><span>10</span></td>
+                        <td><span>2</span></td>
+                        <td><span>200</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>下单人名称</span></td>
+                        <td><span>10</span></td>
+                        <td><span>2</span></td>
+                        <td><span>200</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+               </div>
+               <div class="shxx">查看明细</div>
+               <div class="cont-content-top f5">
+                 <div class="cont-select cont-left">
+                     <select class="cont-select-sel form-control">
+                      <option>下单人</option>
+                      <option>TOM</option>
+                      <option>JIM</option>
+                    </select>
+                 </div>
+                 <div class="cont-select cont-left">
+                     <div id="search" class="box">
+                        <div class="timeDateTwo">
+                            <div class="parent" style="position: relative; width: 140px; height: 40px;"><input id="J_date_1" type="text" class="f-text" value="01/01/01" readonly="" style="position: absolute;"></div>
+                            <div class="parent" style="position: relative; width: 140px; height: 40px;"><input id="J_date_2" type="text" class="f-text" value="01/01/02" readonly="" style="position: absolute;"></div>
+                        </div>
+                     </div>   
+                 </div>
+                 <div class="cont-select cont-left cont-last">
+                     <button type="button" class="btn btn-info">筛选订单</button>
+                 </div>
+               </div>
+               <div class="clearfix"></div>
+               <div class="cont-totay-number">
+                   <span>累计总订单数</span>
+                   <span>订单金额</span>
+                   <span>已发货金额</span>
+               </div>
+               <div class="cont-totay">
+                   <span class="date">
+                     <div>6-14</div>
+                     <div>6-12</div>
+                   </span>
+                   <span class="f4">20</span>
+                   <span class="f4">865</span>
+                   <span class="f4">542</span>
+               </div>
+               <div class="cont-all-detail" id="detail">
+                   <div class="cont-all-detail-top f8">
+                     <span class="f0">时间</span>
+                     <span class="f0">当日订单总数</span>
+                     <span class="f0">下单金额</span>
+                     <span class="f0">已发货金额</span>
+                   </div>
+                   <div class="clearfix"></div>
+                   <div class="cont-all-detail-top f6">
+                     <div style="height:40px;width:100%;">
+                       <span class="f0">6-12</span>
+                       <span class="f0">20</span>
+                       <span class="f0">800</span>
+                       <span class="f0">300</span>
+                       <span class="f7">^</span>
+                     </div>
+                     <div class="cont-total-ul" >
+                        <table class="f9">
+                          <tbody>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                     </div>
+                   </div>
+                   <div class="cont-all-detail-top f6">
+                     <div style="height:40px;width:100%;">
+                       <span class="f0">6-12</span>
+                       <span class="f0">20</span>
+                       <span class="f0">800</span>
+                       <span class="f0">300</span>
+                       <span class="f7">^</span>
+                     </div>
+                     <div class="cont-total-ul">
+                        <table class="f9">
+                          <tbody>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                     </div>
+                   </div>
+                   <div class="cont-all-detail-top f6">
+                     <div style="height:40px;width:100%;">
+                       <span class="f0">6-12</span>
+                       <span class="f0">20</span>
+                       <span class="f0">800</span>
+                       <span class="f0">300</span>
+                       <span class="f7">^</span>
+                     </div>
+                     <div class="cont-total-ul">
+                        <table class="f9">
+                          <tbody>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                            <tr>
+                              <td><span>下单人名称</span></td>
+                              <td><span>10</span></td>
+                              <td><span>2</span></td>
+                              <td><span>200</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                     </div>
+                   </div>
+               </div>
+             </div>
+        </div>
+         <!-- admin-container end -->
+    
+    </div>
+    <!-- admin-content-right end -->
+    <div class="clearfix"></div>
+</div>
+<!-- maincontent end -->
+
+<div class="footer_promise admin-login-class">
+  <div class="content">
+     <div class="promise clearfix">
+         <a href="">
+           <span class="icon_promise promise0"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise1"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise2"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise3"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise4"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise5"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise6 promisea"></span>
+         </a>
+     </div>
+  </div>
+</div>
+<div class="footer">
+  <p>服务热线：028-85977745       备案号：蜀ICP备12017352号-2</p>
+  <p>Copyright© 2010 - 2016 格格屋[gege5.cn] All Rights Reserved gege5.cn</p>
+</div>
+<div class="xf_tk">
+  <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=623862141&amp;site=qq&amp;menu=yes%EF%BC%89" title="QQ联系" class="tk_qq" target="_blank"></a>
+  <a href="http://www.taobao.com/webww/ww.php?ver=3&amp;touid=garyxiao&amp;siteid=cntaobao&amp;status=1&amp;charset=utf-8%EF%BC%89" title="旺旺联系" class="tk_ww" target="_blank"></a>
+<!--   <a href="" title="微信联系" class="tk_wx" target="_blank"></a> -->
+  <a href="" title="返回顶部" class="tk_top"></a>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="js/new.js"></script>
+<script type="text/javascript" src="js/date.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+  (function(){
+  $(".bxslider").bxSlider({
+    auto:true,
+    prevSelector:$(".top_slide_wrap .op_prev")[0],nextSelector:$(".top_slide_wrap .op_next")[0]
+  });
+  
+   $('[data-toggle="popover"]').popover();
+
+})();
+
+
+
+
+
+
+
+</script>
+
+</body>

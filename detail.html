@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<meta charset="UTF-8">
+<title>商品搜索</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta http-equiv=Page-Enter Content=blendTrans(Duration=0.5)>
+<meta http-equiv=Page-Exit Content=blendTrans(Duration=0.5)>
+<meta name="description" content="格格屋">
+<link rel="stylesheet" type="text/css" href="style/common.css">
+<link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+<div class="site_nav">
+    <div class="content clearfix">
+        <span>您好，游客，欢迎来到格格屋！</span>
+        <span class="kf">网站客服</span>
+    </div>
+</div>
+<div class="header h_line">
+    <div class="content clearfix">
+        <div class="fl logo clearfix">
+            <span class="img"><img src="images/logo.jpg"></span>
+            <span class="font"><dl>[<a class="address">广州</a>]</dl><dl>切换城市</dl>
+            <span class="triangle-up" style="display:none"></span>
+               <div class="city" style="display:none">
+                  <div class="clearfix">
+                  <span class="current">广州</span><span>广州</span><span>广州</span><span>广州</span>
+                  <span>广州</span><span>广州</span><span>广州</span><span>广州</span>
+                  </div>
+                  <p class="new">更多新站点，敬请期待！</p>
+               </div>
+            </span>
+        </div>
+        <div class="fl form">
+            <form class="clearfix" id="form">
+                <div class="search_type clearfix">
+                  <span class="type-result current">商品</span>
+                  <span class="type-result">店铺</span>
+                </div>
+                <div class="search_input clearfix">
+                  <input class="keyword" type="text" placeholder="搜索当季爆款">
+                  <input class="search_btn" type="button" value="搜索">
+                </div>
+            </form>
+            <p class="s_hot">
+              <a href="#" target="_blank">500日韩屋</a>
+              <a>我的小伙伴</a>
+              <a>魔法衣橱</a>
+              <a>余果果棉麻女装</a>
+              <a>古妮迪网购</a>
+              <a>未报价日韩</a>
+              <a>全名摄影</a>
+            </p>
+        </div>
+        <div class="fr ewm">
+          <p>扫描二维码</p>
+          <img src="images/ewm.png">
+        </div>
+    </div>
+</div>
+<div class="florid_goods_page_intro">
+  <div class="content clearfix">
+    <div class="florid_goods_left clearfix">
+       <div class="florid_goods_img">
+          <div class="goods_pic_head">
+             <a href="#"><img src="images/dpica_a.jpg" id="defaultImg"></a>
+         </div>
+          <div class="goods_pic_foot">
+            <a><img src="images/dpica.jpg" onmouseover="showDaTu('images/dpica_a.jpg')"></a>
+            <a><img src="images/dpicb.jpg" onmouseover="showDaTu('images/dpicb_b.jpg')"></a>
+            <a><img src="images/dpicc.jpg" onmouseover="showDaTu('images/dpicc_c.jpg')"></a>
+            <a><img src="images/dpicc.jpg" onmouseover="showDaTu('images/dpicc_c.jpg')"></a>
+            <a><img src="images/dpicc.jpg" onmouseover="showDaTu('images/dpicc_c.jpg')"></a>
+            <a><img src="images/dpicc.jpg" onmouseover="showDaTu('images/dpicc_c.jpg')"></a>
+          </div>
+       </div>
+       <div class="florid_goods_mes">
+         <p class="florid_title">2016夏装韩版宽松大字母印花五角星短袖休闲长T女 5020</p>
+         <p class="florid_copy"><span>复制标题</span><span>复制淘宝链接</span><span>找同款</span></p>
+         <div class="florid_goods_money">
+           <p style="margin-top:5px;"><span><a>批发价</a><a class="goods_money ff">￥</a><a class="goods_money fg">35.00</a></span><span class="go"><a>去淘宝看看</a></span></p>
+           <p><span><a>淘宝价</a><a class="ff fh">70.00</a></span><span class="go"><a>浏览：</a><a class="goods_money">959</a>次</span></p>
+         </div>
+         <p><span class="sj">上架</span><span class="sj_sj">2016-1-1 09:00:00</span></p>
+         <p class="florid_colors"><a class="sj">颜色</a><span class="ff fi">粉红色</span><span>黑色</span><span>白色</span></p>
+         <p class="florid_color"><span>尺码</span><span class="ff ys">均码</span></p>
+         <p class="florid_color"><span>数量</span><span class="ff">(库存10000件)</span></p>
+         <p class="florid_btn"><span><a class="btn_le"><img src="images/upload.png"></a><a>传淘宝</a></span><span><a class="btn_le"><img src="images/upload.png"></a><a>传有赞</a></span><span><a class="btn_le"><img src="images/upload.png"></a><a>传微店</a></span></p>
+       </div>
+    </div>
+    <div class="florid_goods_right clearfix">
+       <div class="florid_goods_right_head">
+         <div class="figure_img"><img src="images/aa.jpg"></div>
+         <div class="figure_title">韩韩服饰时尚店</div>
+       </div>
+       <div class="mygege">联系我时请说明来自[格格屋]</div>
+       <div class="figure_item">
+         <div class="pf">评分：</div>
+         <div class="figure_stars">啊实打实大师按时大神按时爱的阿斯顿阿斯顿阿斯顿阿斯顿说的啊</div>
+       </div>
+       <div class="figure_item">
+         <div class="pf">地区：</div>
+         <div class="figure_stars">广州</div>
+       </div>
+       <div class="figure_item">
+         <div class="pf">商城：</div>
+         <div class="figure_stars">国投 - 1F -999-B</div>
+       </div>
+       <div class="figure_item">
+         <div class="pf">优惠：</div>
+         <div class="figure_stars color">减20</div>
+       </div>
+       <div class="figure_item">
+         <div class="pf">资质：</div>
+         <div class="figure_stars"><span class="figure_v">V</span><span class="figure_vip">店铺VIP</span></div>
+       </div>
+       <div class="figure_item">
+         <div class="pf"><img src="images/qq.png"></div>
+         <div class="figure_stars">503090767</div>
+       </div>
+       <div class="figure_item">
+         <div class="pf"><img src="images/ww.png"></div>
+         <div class="figure_stars">KK3888</div>
+       </div>
+       <div class="figure_item">
+         <div class="pf"><img src="images/dh.png"></div>
+         <div class="figure_stars"><span>15915853357</span>/<span>13710934027</span></div>
+       </div>
+       <div class="figure_item"><a class="figure_join">进入店铺</a></div>
+       <div class="figure_con">
+         <a><img src="images/bb.jpg"></a>
+       </div>
+    </div>
+  </div>
+</div>
+<div class="item_main clearfix">
+  <div class="content">
+    <div class="item_mian_left ">
+      <div class="item_main_left_banner">
+        <div id="customer">
+         <div class="Pro_con cus_com">
+           <div class="slideGroup">
+              <div class="parBd">
+                <div class="cus_Con">
+                  <a href="javascript:void(0)" class="cusb cus_pre"></a>
+                  <ul>
+                    <li class="Pro_list cus_list">
+                        <div class="cus_list_img"><img src="images/cc.jpg"></div>
+                        <div class="cus_list_font">
+                            <div><img src="images/sj_up.png"></div>
+                            <div class="cus_ms">潮流撞衫印花T恤</div>
+                            <div><a class="cus_cd">简约时尚</a><a class="cus_cd">百搭经典</a></div>
+                        </div>
+                        <div class="cus_list_mes">
+                            <div class="cus_shop"><a>帅东服饰</a><a class="cus_address">女人街-120-B</a></div>
+                        </div>
+                    </li>
+                    <li class="Pro_list cus_list">
+                        <div class="cus_list_img"><img src="images/dd.jpg"></div>
+                        <div class="cus_list_font">
+                            <div><img src="images/sj_up.png"></div>
+                            <div class="cus_ms">潮流撞衫印花T恤</div>
+                            <div><a class="cus_cd">简约时尚</a><a class="cus_cd">百搭经典</a></div>
+                        </div>
+                        <div class="cus_list_mes">
+                            <div class="cus_shop"><a>帅东服饰</a><a class="cus_address">女人街-120-B</a></div>
+                        </div>
+                    </li>
+                    <li class="Pro_list cus_list">
+                        <div class="cus_list_img"><img src="images/cc.jpg"></div>
+                        <div class="cus_list_font">
+                            <div><img src="images/sj_up.png"></div>
+                            <div class="cus_ms">潮流撞衫印花T恤</div>
+                            <div><a class="cus_cd">简约时尚</a><a class="cus_cd">百搭经典</a></div>
+                        </div>
+                        <div class="cus_list_mes">
+                            <div class="cus_shop"><a>帅东服饰</a><a class="cus_address">女人街-120-B</a></div>
+                        </div>
+                    </li>
+                    <li class="Pro_list cus_list">
+                        <div class="cus_list_img"><img src="images/dd.jpg"></div>
+                        <div class="cus_list_font">
+                            <div><img src="images/sj_up.png"></div>
+                            <div class="cus_ms">潮流撞衫印花T恤</div>
+                            <div><a class="cus_cd">简约时尚</a><a class="cus_cd">百搭经典</a></div>
+                        </div>
+                        <div class="cus_list_mes">
+                            <div class="cus_shop"><a>帅东服饰</a><a class="cus_address">女人街-120-B</a></div>
+                        </div>
+                    </li>
+                  </ul>
+                  <a  href="javascript:void(0)" class="cusb cus_next"></a>
+                </div>
+              </div>
+           </div>  
+         </div>
+        </div>
+      </div>   
+      <div class="item_main_lfet_head">
+        <div id="banner">
+          <ul class="banner_list">
+              <li class="hover"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+          <div class="focus">
+         <ul class="f_pic">
+              <li>
+                <a href="#">
+                  <img src="images/ee.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/ff.jpg">
+                </a>
+              </li>
+              <li>
+              <li>
+                <a href="#">
+                  <img src="images/ee.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/ff.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/ff.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/ff.jpg">
+                </a>
+              </li>
+         </ul>
+         </div>
+        </div>
+      </div>
+      <div class="item_main_lfet_detail">
+         <div class="item_main_lfet_detail_le">
+            <div class="bb_sel">宝贝分类</div>
+            <ul class="bb_all">
+              <li><a>查看所有宝贝>></a></li>
+              <li><a>一周新款</a></li>
+              <li><a>今天</a><a class="ff">昨天</a><a class="ff">前天</a></li>
+              <li><a>16年夏季新款实拍T</a></li>
+              <li><a>16年剪刀手实拍短袖T恤</a></li>
+              <li><a>韩国模特实拍短袖T</a></li>
+              <li><a>16年春季足货爆款</a></li>
+              <li><a>韩国模特实拍爆款</a></li>
+              <li><a>16年春季国内红模爆版</a></li>
+              <li><a>实拍春夏爆款打底裤</a></li>
+              <li><a>16年夏季短袖连衣裙</a></li>
+              <li><a>16年夏季短袖T恤</a></li>
+              <li><a>16年实拍背心、防晒衣</a></li>
+            </ul>
+         </div>
+         <div class="item_main_lfet_detail_ri">
+            <div class="outside">
+               <div class="bb_detail">宝贝详情</div>
+            </div>
+            <div class="bb_message clear">
+                <div class="bb_message_detail ">流行元素：亮片</div>
+                <div class="bb_message_detail ">流行元素：立体装饰</div>
+                <div class="bb_message_detail ">流行元素：绣花</div>
+                <div class="bb_message_detail ">袖长：短袖</div>
+                <div class="bb_message_detail ">货号：147</div>
+                <div class="bb_message_detail ">服装版型：宽松</div>
+                <div class="bb_message_detail ">成分含量：96%及以上</div>
+                <div class="bb_message_detail ">适用年龄：18-24周岁</div>
+                <div class="bb_message_detail ">面料：棉</div>
+                <div class="bb_message_detail ">流行元素：亮片</div>
+                <div class="bb_message_detail ">年份季节：2016年夏季</div>
+                <div class="bb_message_detail ">尺码：L</div>
+                <div class="bb_message_detail ">尺码：XL</div>
+                <div class="bb_message_detail ">尺码：2XL</div>
+            </div>
+            <div class="item_goods_picture">
+               <img src="images/jj.jpg">
+               <img src="images/kk.jpg">
+               <img src="images/ll.jpg">
+               <img src="images/mm.jpg">
+               <img src="images/nn.jpg">
+            </div>
+         </div>
+      </div>
+    </div>
+    <div class="item_mian_right">
+        <div class="item_mian_right_head">
+          <div class="h_banner">
+              <ul class="h_banner_list">
+                  <li class="hover"></li>
+                  <li></li>
+                  <li></li>
+              </ul>
+              <div class="h_focus">
+                 <ul class="h_f_pic">
+                      <li>
+                        <a href="#">
+                          <img src="images/pp.jpg">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="images/yy.jpg">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="images/xx.jpg">
+                        </a>
+                      </li>
+                 </ul>
+              </div>
+          </div>
+        </div>
+        <div class="item_main_right_lb">
+           <div class="lb_img">
+             <img src="images/xx.jpg">
+           </div>
+           <div class="downloadb">
+              <span>传淘宝</span><span>传有赞</span><span>传微店</span>
+           </div>
+           <div class="lb_mes">
+             <div class="lb_font"><a>蔚蓝海域潮男[1001-A] - 新潮都</a></div>
+             <div class="lb_xx"><a>T363 复古蜡笔小新短袖半袖五分袖t恤宽</a></div>
+             <div class="lb_money"><span>￥</span><span class="lb_m">32.00</span></div>
+           </div>
+        </div>
+        <div class="item_main_right_lb">
+           <div class="lb_img">
+             <img src="images/pp.jpg">
+           </div>
+           <div class="downloadb">
+              <span>传淘宝</span><span>传有赞</span><span>传微店</span>
+           </div>
+           <div class="lb_mes">
+             <div class="lb_font"><a>蔚蓝海域潮男[1001-A] - 新潮都</a></div>
+             <div class="lb_xx"><a>T363 复古蜡笔小新短袖半袖五分袖t恤宽</a></div>
+             <div class="lb_money"><span>￥</span><span class="lb_m">32.00</span></div>
+           </div>
+        </div>
+        <div class="item_main_right_lb">
+           <div class="lb_img">
+             <img src="images/dd.jpg">
+           </div>
+           <div class="downloadb">
+              <span>传淘宝</span><span>传有赞</span><span>传微店</span>
+           </div>
+           <div class="lb_mes">
+             <div class="lb_font"><a>蔚蓝海域潮男[1001-A] - 新潮都</a></div>
+             <div class="lb_xx"><a>T363 复古蜡笔小新短袖半袖五分袖t恤宽</a></div>
+             <div class="lb_money"><span>￥</span><span class="lb_m">32.00</span></div>
+           </div>
+        </div>
+        <div class="item_main_right_lb">
+           <div class="lb_img">
+             <img src="images/dd.jpg">
+           </div>
+           <div class="downloadb">
+              <span>传淘宝</span><span>传有赞</span><span>传微店</span>
+           </div>
+           <div class="lb_mes">
+             <div class="lb_font"><a>蔚蓝海域潮男[1001-A] - 新潮都</a></div>
+             <div class="lb_xx"><a>T363 复古蜡笔小新短袖半袖五分袖t恤宽</a></div>
+             <div class="lb_money"><span>￥</span><span class="lb_m">32.00</span></div>
+           </div>
+        </div>  
+        <div class="item_main_right_lb">
+           <div class="lb_img">
+             <img src="images/dd.jpg">
+           </div>
+           <div class="downloadb">
+              <span>传淘宝</span><span>传有赞</span><span>传微店</span>
+           </div>
+           <div class="lb_mes">
+             <div class="lb_font"><a>蔚蓝海域潮男[1001-A] - 新潮都</a></div>
+             <div class="lb_xx"><a>T363 复古蜡笔小新短袖半袖五分袖t恤宽</a></div>
+             <div class="lb_money"><span>￥</span><span class="lb_m">32.00</span></div>
+           </div>
+        </div>
+        <div class="item_main_right_lb">
+           <div class="lb_img">
+             <img src="images/dd.jpg">
+           </div>
+           <div class="downloadb">
+              <span>传淘宝</span><span>传有赞</span><span>传微店</span>
+           </div>
+           <div class="lb_mes">
+             <div class="lb_font"><a>蔚蓝海域潮男[1001-A] - 新潮都</a></div>
+             <div class="lb_xx"><a>T363 复古蜡笔小新短袖半袖五分袖t恤宽</a></div>
+             <div class="lb_money"><span>￥</span><span class="lb_m">32.00</span></div>
+           </div>
+        </div>                                        
+    </div> 
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer_promise">
+  <div class="content">
+     <div class="promise clearfix">
+         <a href="">
+           <span class="icon_promise promise0"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise1"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise2"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise3"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise4"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise5"></span>
+         </a>
+         <a href="">
+           <span class="icon_promise promise6 promisea"></span>
+         </a>
+     </div>
+  </div>
+</div>
+<div class="footer">
+  <p>服务热线：4006805876浙ICP备09002167号|增值电信业务经营许可证：浙B2-20100044</p>
+  <p>Copyright© 2010 - 2016 格格屋[gege5.cn] All Rights Reserved gege5.cn</p>
+</div>
+<div class="xf_tk">
+  <a href="" title="QQ联系" class="tk_qq" target="_blank"></a>
+  <a href="" title="旺旺联系" class="tk_ww" target="_blank"></a>
+  <a href="" title="微信联系" class="tk_wx" target="_blank"></a>
+  <a href="" title="返回顶部" class="tk_top"></a>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+  function showDaTu(src){
+  document.getElementById("defaultImg").src = src;
+}
+
+</script>
+</body>
+</html>
